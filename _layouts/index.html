@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <title>PartialScroll</title>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      #PartialScroll {
+        width: 100vw;
+        margin-bottom: 10vh;
+      }
+
+      .card {
+        height: 50vh;
+        width: 70%;
+        max-width: 95%;
+        margin: 0 auto 300px auto;
+        text-align: center;
+        padding: 2rem;
+        line-height: 1.45;
+        font-size: 16px;
+        color: #2c2c2cd5;
+        background-color: #b2cbced5;
+      }
+
+      aside {
+        height: 90vh;
+        width: 60vw;
+        margin-left: -0.5em;
+        position: sticky;
+        z-index: 9;
+        top: 12em;
+        left: 0;
+        background-color: transparent;
+      }
+
+      .side {
+        position: relative;
+        margin-left: 50vw;
+        font-size: 28px;
+        padding: 0em 0.5em;
+        margin-top: -50%;
+      }
+
+      .sideCard {
+        display: inline-grid;
+        margin: 10px;
+        background-color: #b2cbced5;
+        margin-left: 2.4vw;
+        width: 27vw;
+        height: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="eitherSide">
+      <p>
+        Top of the page
+        <br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text
+      </p>
+    </div>
+    <div id="PartialScroll">
+      <aside>
+        <div class="card">
+          <p>Static content on left side</p>
+        </div>
+      </aside>
+
+      <div class="side">
+        <div style="text-align: center">
+          <div class="sideCard"></div>
+          <div class="sideCard"></div>
+          <div class="sideCard"></div>
+          <div class="sideCard"></div>
+          <div class="sideCard"></div>
+          <div class="sideCard"></div>
+          <div class="sideCard"></div>
+          <div class="sideCard"></div>
+          <div
+            class="sideCard"
+            style="
+              filter: opacity(0);
+              height: 50vh;
+              display: inline-grid;
+            "></div>
+        </div>
+      </div>
+    </div>
+    <div class="eitherSide">
+      <p>
+        <br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />Text<br />
+      </p>
+      <div id="bottom">Bottom of the page</div>
+    </div>
+    <!--Styles not relevant to the demo-->
+    <style>
+      .eitherSide {
+        height: 100vh;
+        position: relative;
+      }
+
+      #bottom {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </body>
+</html>

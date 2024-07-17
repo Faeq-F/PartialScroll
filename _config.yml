@@ -1,0 +1,56 @@
+# Site
+title: "PartialScroll"
+bio: "A demo site"
+description: "A demo site"
+locale: en_GB
+github_username: faeq-f
+github: [metadata]
+
+#fix for github pages css
+baseurl: /PartialScroll
+url: http://faeq-f.github.io
+
+# Jekyll
+permalink: /:title/
+markdown: kramdown
+highlighter: white
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+mathjax: true
+sass:
+  sass_dir: _sass
+  style: compressed
+
+email: faeqfaisal@hotmail.co.uk
+github-url: faeq-F/Quokka
+stackoverflow: 13165763/faeq
+linkedin: faeq
+
+# Gems
+plugins:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-gist
+
+jekyll-mentions:
+  base_url: https://github.com
+
+exclude:
+  [
+    README.md,
+    Gemfile,
+    Gemfile.lock,
+    node_modules,
+    gulpfile.js,
+    package.json,
+    _site,
+    src,
+    vendor,
+    CNAME,
+    LICENSE,
+    Rakefile,
+  ]
